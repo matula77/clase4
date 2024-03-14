@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>ejemplo form contacto</h1>
+
+    </header>
+    <main>
+        <form action="mostrardatosform.html">
+            <fieldset>Datos personales <br>
+
+                <legend>Datos personales </legend><br><br>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" placeholder="Nombre"><br><br>
+                <label for="Apellido">Apellido</label>
+                <input name="Apellido" type="text" placeholder="Apellido"><br><br>
+                <label for="Correo">E-Mail</label>
+                <input type="email" name="Correo" placeholder="E-Mail"><br><br>
+
+                <label for="Pass">Password</label>
+                <input type="password" name="Pass" placeholder="Ingrese Password">
+
+            </fieldset>
+            <fieldset>
+                <legend>lenguaje de interes</legend><br><br>
+
+                <input type="checkbox" name="opcion1">
+                <label for="opcion1">Python</label><br><br>
+                <input type="checkbox" name="opcion2">
+                <label for="opcion2">Java</label><br><br>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>opcion desplegable</legend>
+                <label for="turno">Turno</label>
+                <select name="turno" id="">
+                    <option value="valor1">Mañana</option>
+                    <option value="valor2">Tarde</option>
+                    <option value="valor3" selected="True">Noche
+
+                    </option>
+
+                </select>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>btn enviar:</legend><br><br>
+                <input type="submit" value="Enviar">
+                <!-- envia lo sdatros del formulario a algun lado 
+                 -->
+            
+                 <input type="reset" value="Borrar datos" name="" id="">
+
+            
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+
+</html>
